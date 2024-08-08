@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pernikahan Kami - Konten Utama</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes moveUpDown {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .moving-text {
+            display: inline-block;
+            animation: moveUpDown 3s infinite;
+        }
+        .gift-container {
+            display: none;
+            margin-top: 20px;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+        }
+        .gift-container.active {
+            display: block;
+            max-height: 500px; 
+            opacity: 1;
+        }
+        .gift-item {
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-out;
+        }
+        .gift-item img {
+            width: 100px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        footer .instagram-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            transform: translateX(0);
+        }
+        footer .instagram-item {
+            margin-bottom: 10px;
+        }
+        .story-photo {
+            width: 50%; 
+            height: auto;
+        }
+    </style>
+</head>
+<body class="main-bg">
+    <header>
+        <h1 class="moving-text">Laisa Ahadillah (Ica)<br>&<br>Mochamad Rifaldi Mukim (Apoy)</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#our-story">Cerita Kami</a></li>
+                <li><a href="#schedule">Akad & Resepsi</a></li>
+                <li><a href="#location">Lokasi</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#wedding-gift">Wedding Gift</a></li>
+                <li><a href="#rsvp">Konfirmasi Kehadiran & Ucapan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flower top-left"></div>
+    <div class="flower top-right"></div>
+    <div class="flower bottom-left"></div>
+    <div class="flower bottom-right"></div>
+
+    <section id="home">
+        <h2>Selamat Datang</h2>
+        <p>Assalamu'alaikum Warahmatullahi Wabarakatuh,</p>
+        <p>Dengan penuh rasa syukur dan kebahagiaan, kami mengundang Anda untuk merayakan momen istimewa dalam hidup kami. Kami sangat berbahagia dapat berbagi kebahagiaan ini dengan Anda, keluarga, dan sahabat tercinta. Terima kasih atas doa dan dukungan yang telah diberikan kepada kami.</p>
+        <p>Silakan menjelajahi situs ini untuk mengetahui lebih banyak tentang cerita kami, akad & resepsi, lokasi pernikahan, serta menyampaikan konfirmasi kehadiran dan ucapan.</p>
+        <p>Salam hangat,</p>
+    </section>
+
+    <section id="our-story">
+        <h2>Cerita Kami</h2>
+        <p>Kisah kami dimulai di dunia maya. Kami bertemu melalui media sosial, tempat di mana dua hati yang terpisah oleh jarak bisa saling bertemu dan berkenalan. Dari pesan pertama yang kami tukarkan, ada perasaan nyaman yang langsung terasa.</p>
+        <p>Seiring berjalannya waktu, kami mulai lebih sering berkomunikasi dan menemukan banyak kesamaan. Setiap percakapan selalu penuh dengan canda tawa dan cerita yang membuat kami semakin dekat satu sama lain. Kami segera menyadari bahwa hubungan ini lebih dari sekadar pertemanan di dunia maya.</p>
+        <p>Setelah melewati berbagai momen indah bersama, baik secara virtual maupun akhirnya bertemu langsung, kami memutuskan untuk membawa hubungan ini ke jenjang yang lebih serius.Kini, kami siap untuk memulai babak baru dalam hidup kami sebagai pasangan. Terima kasih atas doa dan dukungan yang diberikan oleh semua orang yang telah menjadi bagian dari perjalanan kami.</p>
+        <img src="cerita.jpg" alt="Foto Pasangan" style="width: 30%; max-width: 400px;">
+    </section>
+    
+    <section id="schedule">
+        <h2>Akad & Resepsi</h2>
+        <p>Acara akan diselenggarakan pada:</p>
+        <p>Tanggal: 11 Agustus 2024</p>
+        <p>Akad: Pukul 08:00 WIB s/d Selesai</p>
+        <p>Resepsi: Pukul 09:00 s/d Selesai</p>
+    </section>
+
+    <section id="location">
+        <h2>Lokasi</h2>
+        <p>Lokasi: Bertempat dikediaman mempelai wanita</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3965.3220782640574!2d106.27231407499146!3d-6.352332993637571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjEnMDguNCJTIDEwNsKwMTYnMjkuNiJF!5e0!3m2!1sid!2sid!4v1722921013672!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="gallery">
+        <h2>Galeri</h2>
+        <p>Kenangan indah dari hari bahagia kami. Kami berharap momen-momen ini juga membawa kebahagiaan bagi Anda..</p>
+        <div class="gallery">
+            <img src="2.jpg" alt="Foto 1">
+            <img src="1.jpg" alt="Foto 2">
+            <img src="3.jpg" alt="Foto 3">
+        </div>
+    </section>
+
+    <section id="wedding-gift">
+        <h2>Wedding Gift</h2>
+        <p>Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara cashless.</p>
+        <button onclick="toggleGiftSection()">🎁 Klik Disini</button>
+        <div class="gift-container" id="giftContainer">
+            <div class="gift-item">
+                <img src="debitbca.jpeg" alt="Bank BCA">
+                <p>5420928086 a/n Mochamad Rifaldi Mukim</p>
+                <button onclick="copyToClipboard('5420928086')">Salin</button>
+            </div>
+            <div class="gift-item">
+                <img src="dana.jpg.webp" alt="DANA">
+                <p>083185818683 a/n Laisa Ahadillah</p>
+                <button onclick="copyToClipboard('083185818683')">Salin</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp">
+        <h2>Konfirmasi Kehadiran & Ucapan</h2>
+        <form id="rsvpForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="attendance">Akan hadir:</label>
+            <select id="attendance" name="attendance" required>
+                <option value="yes">Ya</option>
+                <option value="no">Tidak</option>
+            </select>
+            <label for="message">Ucapan dan Doa:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <div id="wishesDisplay">
+        </div>
+    </section>
+
+    <section id="contact">
+        <p>Jika Anda memiliki pertanyaan, silakan hubungi kami di:</p>
+        <p>WhatsApp: 
+            <a href="https://wa.me/6281289235368" target="_blank">
+                <img src="wa.jpg" alt="WhatsApp" style="width:24px;height:24px;">
+                0812-8923-5368
+            </a>, 
+            <a href="https://wa.me/6283185818683" target="_blank">
+                <img src="wa.jpg" alt="WhatsApp" style="width:24px;height:24px;">
+                0831-8581-8683
+            </a>
+        </p>
+        <p>Instagram: 
+            <a href="https://www.instagram.com/apoyml_36?igsh=MXRnbjFrb2ZqZm9yYg==" target="_blank">
+                <img src="ig.jpg" alt="Instagram" style="width:24px;height:24px;">
+                @apoyml_36
+            </a>, 
+            <a href="https://www.instagram.com/xqueencycax?igsh=aGFlNGI5NHY1eXo0" target="_blank">
+                <img src="ig.jpg" alt="Instagram" style="width:24px;height:24px;">
+                @xqueencycax
+            </a>
+        </p>
+    </section>
+
+    <audio id="wedding-song" autoplay loop>
+        <audio autoplay>
+            <source src="Cinta & Rahasia - Yura Yunita ft Glenn Fredly (Instrumental Acoustic Cover) Backsound Music.mp3" type="audio/mp3"/>
+        </audio>
+    </audio>
+
+    <script>
+        function toggleGiftSection() {
+            const giftContainer = document.getElementById('giftContainer');
+            giftContainer.classList.toggle('active');
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Teks berhasil disalin: ' + text);
+            }, function(err) {
+                alert('Gagal menyalin teks: ', err);
+            });
+        }
+    </script>
+</body>
+</html>

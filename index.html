@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang - Pernikahan Kami</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('flower.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
+
+        .welcome-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .welcome-container h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .welcome-container p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out 1s;
+        }
+
+        .welcome-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out 2s;
+        }
+
+        .welcome-container a {
+            text-decoration: none;
+            padding: 15px 30px;
+            background: #d16b6b;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-in-out 3s;
+            transition: background 0.3s;
+        }
+
+        .welcome-container a:hover {
+            background: #b35656;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Selamat Datang</h1>
+        <p>Di Pernikahan Kami</p>
+        <img src="depan.jpg" alt="Foto Pernikahan">
+        <a href="main.html">🔓 Masuk</a>
+    </div>
+</body>
+</html>
